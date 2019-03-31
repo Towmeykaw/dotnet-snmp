@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "snmp-sender": {
+      "commandName": "Project",
+      "commandLineArgs": "get -p=162  "
+    }
+  }
+}
