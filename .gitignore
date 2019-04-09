@@ -1,2 +1,5 @@
-/snmp-sender/bin
-/snmp-sender/obj
+/SnmpSender/bin
+/SnmpSender/obj
+/.vs
+/SnmpSender.Tests/obj
+/SnmpSender.Tests/bin

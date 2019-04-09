@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lextm.SharpSnmpLib" Version="11.1.0" />
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.3" />
+    <PackageReference Include="Lextm.SharpSnmpLib" Version="10.0.11" />
+    <PackageReference Include="System.CommandLine.Experimental" Version="0.2.0-alpha.19174.3" />
   </ItemGroup>
-
+  
 </Project>

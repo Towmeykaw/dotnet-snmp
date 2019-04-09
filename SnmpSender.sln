@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28621.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snmp-sender", "snmp-sender\snmp-sender.csproj", "{BD65EBBD-FFA6-4B94-8A85-4029BCF37507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnmpSender", "SnmpSender\SnmpSender.csproj", "{BD65EBBD-FFA6-4B94-8A85-4029BCF37507}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnmpSender.Tests", "SnmpSender.Tests\SnmpSender.Tests.csproj", "{842CF381-48ED-49A6-BC6A-AB3E9762734D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BD65EBBD-FFA6-4B94-8A85-4029BCF37507}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD65EBBD-FFA6-4B94-8A85-4029BCF37507}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD65EBBD-FFA6-4B94-8A85-4029BCF37507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842CF381-48ED-49A6-BC6A-AB3E9762734D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842CF381-48ED-49A6-BC6A-AB3E9762734D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842CF381-48ED-49A6-BC6A-AB3E9762734D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842CF381-48ED-49A6-BC6A-AB3E9762734D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
