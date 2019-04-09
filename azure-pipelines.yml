@@ -1,0 +1,31 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+
+- script: dotnet test '**/*Tests/*.csproj' --configuration $(buildConfiguration)
+  displayName: dotnet test
+
+- script: dotnet publish --output $(Build.ArtifactStagingDirectory)
+
+#- script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+#- task: NuGetCommand@2
+#  inputs:
+#    command: push
+#    nuGetFeedType: external
+#    publishFeedCredentials: '<Name of the NuGet service connection>'
+#    versioningScheme: byEnvVar
+#    versionEnvVar: version
