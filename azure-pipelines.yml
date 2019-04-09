@@ -21,7 +21,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: dotnet test '**/*Tests/*.csproj' --configuration $(buildConfiguration)
+- script: dotnet test --configuration $(buildConfiguration)
   displayName: dotnet test
 
 - script: dotnet publish --output $(Build.ArtifactStagingDirectory)
