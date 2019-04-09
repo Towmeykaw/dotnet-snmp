@@ -4,6 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>SnmpSender</RootNamespace>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>snmp</ToolCommandName>
     <LangVersion>preview</LangVersion>
     <NullableContextOptions>enable</NullableContextOptions>
   </PropertyGroup>
