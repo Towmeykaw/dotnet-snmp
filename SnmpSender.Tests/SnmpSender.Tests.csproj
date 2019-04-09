@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>SnmpSender.Tests</RootNamespace>
+  <TargetFramework>netcoreapp3.0</TargetFramework>
+  <RootNamespace>SnmpSender.Tests</RootNamespace>
     <IsPackable>false</IsPackable>
+    <LangVersion>preview</LangVersion>
+    <NullableContextOptions>enable</NullableContextOptions>
   </PropertyGroup>
 
   <ItemGroup>
