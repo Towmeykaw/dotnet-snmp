@@ -26,8 +26,8 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: pack
-    packagesToPack: '**/*.csproj'
-    
+    packagesToPack: '**/SnmpSender.csproj'
+
 #- script: dotnet push 
 #- task: NuGetCommand@2
 #  inputs:
