@@ -23,9 +23,11 @@ steps:
 - script: dotnet test --configuration $(buildConfiguration)
   displayName: dotnet test
 
-- script: dotnet pack 
-  displayName: dotnet pack
-
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.csproj'
+    
 #- script: dotnet push 
 #- task: NuGetCommand@2
 #  inputs:
