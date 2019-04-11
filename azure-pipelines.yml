@@ -31,4 +31,4 @@ steps:
     command: 'push'
     nuGetFeedType: 'external'
     packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg' # Required when command == push
-    publishFeedCredentials: Nuget
+    publishFeedCredentials: BasicNuget
