@@ -26,9 +26,6 @@ steps:
 - script: dotnet pack -o $(build.artifactStagingDirectory) -c $(buildConfiguration)
   displayName: dotnet pack
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'push'
-    nuGetFeedType: 'external'
-    packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg' # Required when command == push
-    publishFeedCredentials: BasicNuget
+- script: dotnet push $(build.artifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(NugetApiKey)
+  displayName: dotnet pack
+ 
