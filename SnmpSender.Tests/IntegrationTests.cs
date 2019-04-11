@@ -11,8 +11,9 @@ using Xunit;
 
 namespace SnmpSender.Tests
 {
-    public class SnmpEngineFixture : IDisposable
+    public class SnmpEngineFixture //: IDisposable
     {
+        /*
         static SnmpEngine engine;
         
         public SnmpEngineFixture()
@@ -79,7 +80,7 @@ namespace SnmpSender.Tests
         {
 
         }
-
+        
         [Fact]
         public void ShouldContainObjectIdOfMessage()
         {
@@ -111,5 +112,5 @@ namespace SnmpSender.Tests
             respose = e.Message.Variables().First().Id.ToString();
             countEventObject.Signal();
         }
-    }
+    */}
 }
