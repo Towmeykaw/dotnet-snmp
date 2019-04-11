@@ -13,11 +13,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-
-- task: DotNetCoreInstaller@0
-  inputs:
-    version: '2.2.202'
-
 - task: DotNetCoreInstaller@0
   inputs:
     version: '3.0.100-preview3-010431'
@@ -28,9 +23,10 @@ steps:
 - script: dotnet test --configuration $(buildConfiguration)
   displayName: dotnet test
 
-- script: dotnet publish --output $(Build.ArtifactStagingDirectory)
+- script: dotnet pack 
+  displayName: dotnet pack
 
-#- script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+#- script: dotnet push 
 #- task: NuGetCommand@2
 #  inputs:
 #    command: push
