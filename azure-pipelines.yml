@@ -28,6 +28,6 @@ steps:
 - script: dotnet pack -o $(build.artifactStagingDirectory) -c $(buildConfiguration)
   displayName: dotnet pack
 
-- script: dotnet push $(build.artifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(NugetApiKey)
+- script: dotnet nuget push $(build.artifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(NugetApiKey)
   displayName: dotnet pack
  
