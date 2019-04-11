@@ -23,7 +23,7 @@ steps:
 - script: dotnet test --configuration $(buildConfiguration)
   displayName: dotnet test
 
-- script: dotnet pack 
+- script: dotnet pack -o $(build.artifactStagingDirectory) -c $(buildConfiguration)
   displayName: dotnet pack
 
 - task: DotNetCoreCLI@2
