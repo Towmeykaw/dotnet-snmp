@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>netcoreapp3.0;netcoreapp2.2</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
     <RootNamespace>SnmpSender</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>snmp</ToolCommandName>
