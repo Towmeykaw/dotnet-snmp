@@ -10,7 +10,9 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  buildConfiguration: 'Release'
+- group: ApiKeys
+- name: buildConfiguration
+  value: 'Release'
 
 steps:
 - task: DotNetCoreInstaller@0
