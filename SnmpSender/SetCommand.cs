@@ -28,7 +28,12 @@ namespace SnmpSender
             return command;
         }
         public static void Send(int port, int version, string community, string address, List<string> setVar)
-        {            
+        {           
+            if(setVar == null)
+            {
+                Console.WriteLine("Missing variable --setVar");
+                return;
+            }
             var setVariables = SnmpHelpers.ParseVariables(setVar);
             var versionCode = SnmpHelpers.GetVersion(version);
             if (!IPAddress.TryParse(address, out IPAddress ip))
