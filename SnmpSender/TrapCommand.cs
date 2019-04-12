@@ -39,6 +39,7 @@ namespace SnmpSender
                     Arity = ArgumentArity.ZeroOrOne
                 });
             command.AddOption(variables);
+            command.AddOption(requestId);
             command.Handler = CommandHandler.Create<int, int, string, string, string, int?, List<string>>(Send);
             return command;
         }

@@ -4,5 +4,11 @@ A dotnet global tool for sending Snmp messages
 
 Install with command 
 ```
-dotnet tool install -g snmp
+dotnet tool install -g SnmpSender
+```
+This tool currently support version 1 and 2 of get, set and trap. 
+
+Invoke with command
+```
+snmp get 1.2.3.4 -a 127.0.0.1 -p 161
 ```

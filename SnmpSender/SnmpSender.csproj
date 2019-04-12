@@ -8,6 +8,9 @@
     <ToolCommandName>snmp</ToolCommandName>
     <LangVersion>preview</LangVersion>
     <NullableContextOptions>enable</NullableContextOptions>
+    <Version>1.0.1</Version>
+    <Authors>Towmeykaw</Authors>
+    <PackageProjectUrl>https://github.com/Towmeykaw/dotnet-snmp</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
